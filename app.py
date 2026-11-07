@@ -10,9 +10,7 @@ def create_app(config: type[Config] = Config) -> Flask:
     """Создаёт и настраивает приложение."""
     app = Flask(__name__)
     app.config.from_object(config)
-
     app.register_blueprint(posts_bp)
-
     return app
 
 
