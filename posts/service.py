@@ -1,8 +1,11 @@
 """Сервис постов."""
-from repositories.post_repo import PostRepository
+
+from posts.repository import PostRepository
+
 
 class PostService:
     """Бизнес-логика постов."""
+
     def __init__(self, repo: PostRepository) -> None:
         self.repo = repo
 

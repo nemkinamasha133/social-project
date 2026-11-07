@@ -1,6 +1,8 @@
 """Подключение к БД."""
+
 import sqlite3
 from contextlib import contextmanager
+
 
 @contextmanager
 def get_connection(db_path: str = "social.db"):
